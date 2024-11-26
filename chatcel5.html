@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
+  <link rel="stylesheet" href="css/pruebaa.css">
+</head>
+<body>
+  <div class="centro">
+    <div class="contactos">
+         <div class="contacto-header" id="contactoHeader">
+                <h2>Contactos</h2>
+                <i class="arrow" id="arrow"> &#9660; </i> <!-- Icono de flecha -->
+            </div>
+        <div class="contacto-list" id="contactoList">
+      <div class="contacto">
+        <div class="fotos pica"></div>
+        <div class="nombre">
+            <a href="chatcel1.html">julian alvarez</a></div>
+        <div class="message">
+            pero responde!!!</div>
+      </div>
+      <div class="contacto">
+        <div class="fotos juancito"></div>
+        <div class="nombre"><a href="chatcel2.html">juan</a></div>
+        <div class="message">ckdnnc kndkcn c jnkn k</div>
+      </div>
+      <div class="contacto">
+        <div class="fotos banner"></div>
+        <div class="nombre"><a href="chatcel3.html">julian p</a></div>
+        <div class="message">hjbjhb hb kndkcn c jnkn k</div>
+      </div>
+      <div class="contacto">
+        <div class="fotos pedrito"></div>
+        <div class="nombre"><a href="chatcel4.html">pedro</a></div>
+        <div class="message">ks kncsn ckdnnc kndkcn c jnkn k</div>
+      </div>
+      <div class="contacto">
+        <div class="fotos pepe"></div>
+        <div class="nombre"><a href="chatcel5.html">pepito</a></div>
+        <div class="message">nkdkjs ks kncsn ckdnnc kndkcn c jnkn</div>
+      </div>
+        </div>
+    </div>
+    <div class="chat">
+      <div class="contacto bar">
+        <div class="fotos juancito"></div>
+        <div class="nombre">juan</div>
+        <div class="seen">hoy a las 5:80pm</div>
+      </div>
+      <div class="messages" id="chat">
+        <div class="time">hoy a las 4:00pm</div>
+        <div class="message yopo">hola hola hola hola hola chicihc ichichc hchchchcnn ncnna nnnnkjn najnjn snncasna jkcksnc</div>
+        <div class="message juancito">no cno cnocondosinc hhd cgskc ugdcbshdc b hb y scsgchsmsb vc s</div>
+        <div class="message yopo">hohohon hohoho hoho ho ohohohh phoohn</div>
+        <div class="message yopo">hola hola hola hola hola chicihc ichichc hchchchcnn ncnna nnnnkjn najnjn snncasna jkcksnc</div>
+        <div class="message juancito">no cno cnocondosinc hhd cgskc ugdcbshdc b hb y scsgchsmsb vc s</div>
+        <div class="message yopo">hola hola hola hola hola chicihc ichichc hchchchcnn ncnna nnnnkjn najnjn snncasna jkcksnc</div>
+        <div class="message juancito">no cno cnocondosinc hhd cgskc ugdcbshdc b hb y scsgchsmsb vc s</div>
+        <div class="message yopo">hola hola hola hola hola chicihc ichichc hchchchcnn ncnna nnnnkjn najnjn snncasna jkcksnc</div>
+        <div class="message juancito">no cno cnocondosinc hhd cgskc ugdcbshdc b hb y scsgchsmsb vc s</div>
+        <div class="message juancito">
+          <div class="typing typing-1"></div>
+          <div class="typing typing-2"></div>
+          <div class="typing typing-3"></div>
+        </div>
+      </div>
+      <div class="input">
+        <i class="fas fa-camera"></i>
+        <i class="far fa-laugh-beam"></i>
+        <input placeholder="Type your message here!" type="text" />
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+  </div>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="javajava/java.js">
+    document.addEventListener('DOMContentLoaded', function() {
+    const contactoHeader = document.getElementById('contactoHeader');
+    const contactoList = document.getElementById('contactoList');
+    const arrow = document.getElementById('arrow');
+
+    contactoHeader.addEventListener('click', function() {
+        // Alterna la visibilidad de la lista de contactos
+        contactoList.style.display = contactoList.style.display === 'block' ? 'none' : 'block';
+        
+        // Cambia la clase para rotar la flecha
+        arrow.classList.toggle('open');
+    });
+});
+    </script>
+</body>
+</html>

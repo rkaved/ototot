@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="css/logg/loog.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Cinzel:wght@400..900&family=Kings&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="login_container">
+            <div class="login_title">
+                <span>Sign Up </span>
+            </div>
+
+            <form id="loginForm"> <!-- Agregado el formulario aquí -->
+                <div class="input_wrapper">
+                    <input type="text" id="user" class="input_field" required />
+                    <label for="user" class="label"> Nombre de usuario </label>
+                    <i class="fa-regular fa-user icon"></i>
+                </div>
+
+                <div class="input_wrapper">
+                    <input type="password" id="pass" class="input_field" required />
+                    <label for="pass" class="label"> Contraseña </label>
+                    <i class="fa-solid fa-lock icon"></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" />
+                        <label for="remember"> Recordar más tarde </label>
+                    </div>
+                </div>
+
+                <div class="forgot">
+                    <a href="#"> Olvidé mi contraseña</a>
+                </div>
+
+                <div class="input_wrapper">
+                    <button type="button" class="input-submit" onclick="window.location.href='pagina_principal.html'">
+                        Enviar
+                    </button>
+                </div>
+                <div class="signup">
+                    <span>Ya tienes cuenta? <a href="index.html"> Login </a></span>
+                </div>
+            </form> <!-- Cierre del formulario -->
+        </div>
+    </div>
+    <script src="javajava/scriptjava.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+</body>
+</html>

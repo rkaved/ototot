@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root { 
+    --primary-color: #c82121; /* Rojo oscuro */
+    --secondary-color: #4B0000; /* Vino oscuro */
+    --text-color: #ecc6c6; /* Color de texto claro */
+    --background-color: rgba(0, 0, 0, 0.43); /* Fondo oscuro */
+}
+
+body {
+    background-image: url("https://i.pinimg.com/736x/e6/0a/83/e60a83e8767ebbba4a1861aa82b3a113.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: url('data:image/x-icon;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA///8f///+H/8//B/+Hng//Awgf/4EAH//BAD//wAA//8AAP//ACB//wBgP/8AwD//AYB//weA//8HgD//B4AP/g4AD/4MAA/+AAAP/gAHj/wAP//8AP//+AP///gP///4H///8H////D////x/////////////////////////8='), auto;
+
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+.login_container {
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(250, 25, 25, 0.76); /* Efecto neón */
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.login_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login_title span {
+    color: var(--primary-color);
+    font-size: 362%;
+    font-family: 'Bonheur Royale', cursive;
+    text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px rgba(255, 0, 0, 0.7); /* Efecto neón */
+    letter-spacing: 4px; /* Aumenta el espaciado entre letras */
+    margin-top: -25px; /* Ajusta la posición vertical hacia arriba */
+    display: inline-block; 
+}
+
+.input_wrapper {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input_field {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.input_field:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.label {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: var(--text-color);
+    transition: 0.2s;
+    font-family: 'cinzel', cursive;;
+}
+
+.input_field:focus ~ .label,
+.input_field:valid ~ .label {
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    color: var(--primary-color);
+    background: rgba(30, 30, 30, 0.9);
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: var(--text-color);
+}
+
+.input-submit {
+    background: var(--primary-color);
+    color: #e2b5b5;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: 'Bonheur Royale', cursive;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px rgba(255, 0, 0, 0.7); /* Efecto neón */
+}
+
+.input-submit:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-family: 'cinzel', monospace;
+    font-size: 79%;
+    letter-spacing: 1.3px;
+}
+.forgot {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ff0000; /* Color más claro para el texto "forgot" */
+    text-decoration: none; /* Sin decoración de texto */
+    transition: color 0.3s, text-shadow 0.3s; /* Transición suave */
+}
+
+
+.forgot a {
+    text-align: center;
+    margin-top: 10px;
+    color: #c38a8a; /* Color más claro para el texto "forgot" */
+    text-decoration: none; /* Sin decoración de texto */
+   font-family: 'cinzel', cursive;
+    font-style: italic;
+    transition: color 0.3s, text-shadow 0.3s; /* Transición suave */
+}
+
+.forgot:hover {
+    color: #ff0000; /* Color más claro al pasar el mouse */
+    text-shadow: 0 0 5px rgba(190, 0, 0, 0.92), 0 0 10px rgba(255, 0, 0, 0.5); /* Efecto de resplandor al pasar el mouse */
+}
+.signup a{
+    font-family: 'kings', cursive;
+    font-size: 144%;
+    letter-spacing: 2px;
+}
+.signup {
+    text-align: center;
+    font-family: 'cinzel', cursive;
+    font-size: 100%;
+    color: var(--text-color);
+    transition: color 0.3s, text-shadow 0.3s; /* Transición suave */
+}
+
+.signup:hover {
+    color: #ffffff; /* Color más claro al pasar el mouse */
+    text-shadow: 0 0 5px rgba(183, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5); /* Efecto de resplandor al pasar el mouse */
+}
+
+.signup a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+   }

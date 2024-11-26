@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
+  <link rel="stylesheet" href="css/pruebaa.css">
+</head>
+<body>
+  <div class="iconup">
+            <div class="menuicon" id="navicon">
+                <i class="fa fa-navicon"></i>
+            </div>
+            <div class="icon-logo">
+                <img src="imagenes/black-and-white-star-icon-free-png.webp" alt=""/>
+            </div>
+            <div class="navbar_page">
+                <a href="pagina_principal.html"> Volver</a>
+            </div>
+            <div class="navbar-bus">
+                <form method="#" action="/"> <!-- metodo de envio formulario -->
+                    <input type="text" placeholder="escribe algo..." />
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            
+            <div class="navbar-user" id="perfil">
+                  <img src="imagenes/foto-perfil.png" alt="" />
+            <span id="navbar-user-up">Nachito perez<br></span><i class="fa fa-angle-down"></i>
+            </div>
+        
+    </div>
+  <div class="centro">
+    <div class="contactos">
+         <div class="contacto-header" id="contactoHeader">
+                <h2>Contactos</h2>
+                <i class="arrow" id="arrow"> &#9660; </i> <!-- Icono de flecha -->
+            </div>
+        <div class="contacto-list" id="contactoList">
+      <div class="contacto">
+        <div class="fotos juancito"></div>
+        <div class="nombre">
+            <a href="chatcel.html">L.M</a></div>
+        <div class="message">
+            pero responde!!!...</div>
+      </div>
+      <div class="contacto">
+        <div class="fotos pedrito"></div>
+        <div class="nombre"><a href="chatcel2.html">Perla</a></div>
+      </div>
+      <div class="contacto">
+        <div class="fotos pepe"></div>
+        <div class="nombre"><a href="chatcel3.html">Melissa</a></div>
+        <div class="message">Lo sé, y me gusta verte...</div>
+      </div>
+      <div class="contacto">
+        <div class="fotos pedrito"></div>
+        <div class="nombre"><a href="chatcel4.html">Melissa :3</a></div>
+        <div class="message">te quierooo...k</div>
+      </div>
+      
+        </div>
+    </div>
+    <div class="chat">
+      <div class="contacto bar">
+        <div class="fotos banner"></div>
+        <div class="nombre">Mike</div>
+        <div class="seen">ayer a las 4:80pm</div>
+      </div>
+      <div class="messages" id="chat">
+        <div class="time">28 de Agosto a las 9:00pm</div>
+        <div class="message yopo">Mike, necesito tu ayuda. Ya estoy decidido.</div>
+        <div class="message juancito">Al fin te vas a atrever? </div>
+        <div class="message juancito"> Ya era hora. Siempre me cuentas, pero nunca haces nada.</div>
+        <div class="message yopo">Es diferente esta vez. Estoy harto de solo pensar en ella. Es como si me estuviera consumiendo. Quiero hacer algo real.</div>
+        <div class="message juancito"> Bien, eso quería escuchar. </div>
+        <div class="message juancito">¿Qué necesitas?</div>
+        <div class="message yopo">Todo. Lugar, herramientas, algo para controlarla rápido.</div>
+        <div class="message yopo"> Quiero que salga perfecto. </div>
+        <div class="message juancito">Ya sabía que ibas a pedirme algo así. Por suerte, ya tengo casi todo listo.</div>
+        <div class="message yopo">i¿De verdad? T.T</div>
+        <div class="message juancito">¿Qué quieres exactamente? ¿Cuerdas? ¿Cinta? ¿Algo más... fuerte?</div>
+        <div class="message yopo">Sí, todo eso. Algo que la mantenga controlada.</div>
+        <div class="message juancito">Tengo un kit perfecto. Cuerda, cinta de alta resistencia, un par de esposas… y, por si acaso, un sedante potente..</div>
+        <div class="message juancito"> Es fácil de usar. ¿Sabes manejar algo así?</div>
+        <div class="message yopo">No, pero aprendo rápido :D.</div>
+        <div class="message juancito">Bien. Entonces este es el plan: mañana te paso el equipo y te doy las llaves de la camioneta. Solo asegúrate de no llamar la atención..</div>
+         <div class="message yopo">u¿Y si algo sale mal?</div>
+        <div class="message juancito">Nada va a salir mal si sigues las instrucciones  </div>
+        
+        <div class="message yopo">Está bien. Gracias, Mike.</div>
+        <div class="message yopo">Tienes la invitación para la boda asegurada ;m</div>
+        <div class="message juancito">No tienes que agradecérmelo. </div>
+        <div class="message juancito">Solo asegúrate de hacer las cosas bien.</div>
+        <div class="message yopo"> Lo haré.</div>
+        <div class="message juancito">Bien. Nos vemos mañana,</div>
+        <div class="message juancito"> y recuerda: esto queda entre tú y yo.</div>
+        <div class="message yopo">Obvio pa, hasta ofende que me recuerdes.</div>
+        <div class="message juancito">Comote fue con la morida? :p</div></div>
+        <div class="message juancito">
+          <div class="typing typing-1"></div>
+          <div class="typing typing-2"></div>
+          <div class="typing typing-3"></div>
+        </div>
+      <div class="input">
+        <i class="fas fa-camera"></i>
+        <i class="far fa-laugh-beam"></i>
+        <input placeholder="Type your message here!" type="text" />
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+  </div>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="javajava/java.js">
+    document.addEventListener('DOMContentLoaded', function() {
+    const contactoHeader = document.getElementById('contactoHeader');
+    const contactoList = document.getElementById('contactoList');
+    const arrow = document.getElementById('arrow');
+
+    contactoHeader.addEventListener('click', function() {
+        // Alterna la visibilidad de la lista de contactos
+        contactoList.style.display = contactoList.style.display === 'block' ? 'none' : 'block';
+        
+        // Cambia la clase para rotar la flecha
+        arrow.classList.toggle('open');
+    });
+});
+    </script>
+</body>
+</html>

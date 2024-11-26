@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Tétrico de Realidad Virtual</title>
+    <link rel="stylesheet" href="pag/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ruthie&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="main-header">
+        <h1>El matadero: Mundo de Realidad Virtual</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="profile.html">Perfil</a></li> <!--aca se va a unir con el perfil-->
+                <li><a href="#details">Detalles</a></li>
+                <li><a href="#reviews">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Carrusel de Imágenes y Videos -->
+        <section class="media-section" id="carousel">
+            <div class="carousel">
+                <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-inner">
+                    <img src="pag/sala1.png" alt="Imagen 1">
+                    <img src="pag/sala%202.png" alt="Imagen 2">
+                     <img src="pag/sala%203.png" alt="Imagen 1">
+                    <img src="pag/sala%204.png" alt="Imagen 2">
+                    <video controls muted loop>
+                        <source src="escenasala5.10000-0031.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button> <!--no lo quitesssss-->
+            </div>
+        </section>
+
+        <!-- Detalles del Juego -->
+        <section class="details-section" id="details">
+            <center><h1>Sinopsis</h1>
+            <p class="quote">Sumérgete en una experiencia donde la oscuridad y el misterio son los protagonistas...</p>
+                <p>Explora un mundo donde el amor y la obsesión se entrelazan en una peligrosa danza que te hara cuestionarte hasta donde es correcto llamrlo "amor".</p>
+                <p>Descubre hasta dónde puede llevar el deseo cuando se confunde con la necesidad de ser alguien más. ¿Podrás enfrentar el reflejo en la oscuridad?</p>
+            <div class="button-group">
+                <button onclick="alert('Indaga por la pagina y sumergete en nuestro mundo...')" class="btn">Explorar</button>
+                <button onclick="alert('Descargando...')" class="btn" >APK</button>
+                <button onclick="alert('Ve al video pa...')" class="btn">Ver Tráiler</button>
+            </div>
+          </center>
+        </section>
+
+        <!-- Sección de Reseñas -->
+        <section class="reviews-section" id="reviews">
+            <h3>Reseñas de los Jugadores</h3>
+            <textarea id="commentInput" placeholder="Deja tu reseña..."></textarea>
+            <button id="submitReview">Enviar Reseña</button>
+            <ul id="commentList"></ul>
+        </section>
+    </div>
+    
+    <footer class="main-footer">
+        <p>&copy; 2024 Derechos reservados. "Matadero Un Mundo de Realidad Virtual"</p>
+    </footer>
+<button onclick="scrollToTop()" id="scrollToTopBtn">
+    🔪
+</button>
+
+    <script src="pag/script.js"></script>
+</body>
+</html>
